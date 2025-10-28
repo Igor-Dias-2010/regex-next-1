@@ -40,7 +40,7 @@ export default function Regex() {
             {message && <p>{message}</p>}
             <input type="text" placeholder='Type a password' value={password} onChange={handlePasswordChange} />
             <div className='validate'>
-                <input type="text" placeholder='Confirm password' value={confirmPassword} onChange={handleConfirmPasswordChange} onKeyDown={handleConfirmPasswordChange} />
+                <input type="text" placeholder='Confirm password' value={confirmPassword} onChange={handleConfirmPasswordChange} onKeyDown={handleEnterToValidate} />
                 <button onClick={validatePswd}>Validate</button>
                 <button onClick={clearField}>Clear filed</button>
             </div>
